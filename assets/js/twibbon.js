@@ -15,7 +15,7 @@ $(document).ready(function() {
             html =
                 '<img class="border border-1 img-fluid" src="' + result.src + '" />' +
                 '<p class="mb-3 mt-3">Silakan tekan lama pada gambar dan pilih "Download image" atau gunakan tombol di bawah ini</p>' +
-                '<a href="' + result.src + '" id="downloadlink" class="btn btn-primary mb-3" download="Twibbon Diklatsar 41.png"><i class="bi bi-cloud-arrow-down-fill"></i> Unduh Twibbon</a>';
+                '<a href="' + result.src + '" id="downloadlink" class="btn btn-primary mb-3" download="Twibbon.png"><i class="bi bi-cloud-arrow-down-fill"></i> Unduh Twibbon</a>';
         }
         Swal.fire({
             title: 'Taraaaa !',
@@ -92,7 +92,7 @@ $(document).ready(function() {
 
     $("#downloadlink").on("click", ".sweet-alert", function() {
         console.log(this);
-        downloadCanvas(this, "imageCanvas", "Twibbon Diklatsar 41.png");
+        downloadCanvas(this, "imageCanvas", "Twibbon.png");
     });
 
     var basic = $("#demo-basic").croppie({
