@@ -1,5 +1,17 @@
 <?php
     $title = 'Twibbon';
+    $instagram = 'https://www.instagram.com/p/';
+    $website = 'https://pddimalang.id/wp-content/uploads/';
+    $source = './assets/images/pengguna.json';
+
+    $data['post'] = [
+        'CsuT37pBMj0', 'CsnlhkdvPNo', 'Csmdu5Hh9-l',
+    ];
+
+    $data['image'] = [
+        '2023/05/CsuT37pBMj0.jpeg','2023/05/CsnlhkdvPNo.jpeg', '2023/05/Csmdu5Hh9-l.jpeg', 
+    ];
+
     include 'template/header.php';
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
@@ -30,7 +42,7 @@
                 <h2></h2>
                 <p class="lead">Ayo! Tampil kece bersama untuk memeriahkan kegiatan.... <i class="bi bi-emoji-sunglasses"></i></p>
             </div>
-            <div class="card">
+            <div class="card mb-3">
                 <h5 class="card-header bg-warning text-dark fw-bold"><i class="bi bi-sunglasses"></i> Atur Twibbon</h5>
                 <div class="card-body">
                     <div class="row">
@@ -81,127 +93,30 @@ Kami Tunggu ya 🙌
                     </div>
                 </div>
             </div>
-            <small class="text-muted d-none">Media dengan tag @pddi.malang</small>
-            <div class="row flex-row flex-nowrap pb-4 pt-2 media-list d-none" style="overflow-x: auto;">
+            <small class="text-muted">Media dengan tag @pddi.malang dan @1000donordarahmilenial</small>
+            <div class="row flex-row flex-nowrap pb-4 pt-2 media-list" style="overflow-x: auto;">
+            <?php
+                if (sizeof($data['post']) === sizeof($data['image'])):
+                    for ($file = 0; $file < sizeof($data['image']); $file++):
+            ?>
                 <div class="col-2">
                     <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYrU2YPvrz0/" target="_blank">
-                            <img src="./assets/images/twibbon/271673887_357344659078561_7908552647035306399_n.jpg" class="card-img-top" alt="CYrU2YPvrz0">
+                        <a href="<?php echo $instagram . $data['post'][$file]; ?>" target="_blank">
+                            <img src="<?php echo $website . $data['image'][$file]; ?>" class="card-img-top" alt="CYq9fibhqMt">
                         </a>
                     </div>
                 </div>
+            <?php endfor; endif; ?>
+
+            <?php for ($temp = 0; $temp < 5; $temp++): ?>
                 <div class="col-2">
                     <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYrPM77vUsc/" target="_blank">
-                            <img src="./assets/images/twibbon/271838038_326875206110783_7558927494031234626_n.webp.jpg" class="card-img-top" alt="CYrPM77vUsc">
+                        <a href="index.php">
+                            <img src="https://via.placeholder.com/195x195?text=Buat Versimu!" class="card-img-top" alt="CYqt_5avZpE">
                         </a>
                     </div>
                 </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="https://www.instagram.com/p/CYrHYr-PYvz/" target="_blank">
-                            <img src="./assets/images/twibbon/271701277_357777935688780_2451192686122682663_n.webp.jpg" class="card-img-top" alt="CYrHYr-PYvz">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYq9fibhqMt/" target="_blank">
-                            <img src="./assets/images/twibbon/271676892_276098327924219_5169940462771688051_n.webp.jpg" class="card-img-top" alt="CYq9fibhqMt">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYq68PDhq8n/" target="_blank">
-                            <img src="./assets/images/twibbon/271638778_1723249074733615_5061170833911587758_n.webp.jpg" class="card-img-top" alt="CYq68PDhq8n">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYq45AmPjWm/" target="_blank">
-                            <img src="./assets/images/twibbon/271768962_1812543492265217_6247227838065805045_n.webp.jpg" class="card-img-top" alt="CYq45AmPjWm">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYq41G_F3p8/" target="_blank">
-                            <img src="./assets/images/twibbon/271884625_252230546993289_2402648830344609864_n.webp.jpg" class="card-img-top" alt="CYq41G_F3p8">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYq21pUvnCE/" target="_blank">
-                            <img src="./assets/images/twibbon/271858731_358109705665852_2959740822716978766_n.jpg" class="card-img-top" alt="CYq21pUvnCE">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYq2qatlovp/" target="_blank">
-                            <img src="./assets/images/twibbon/271687258_642793806863557_731300246005082076_n.jpg" class="card-img-top" alt="CYq2qatlovp">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYq2ZPdPLtT/" target="_blank">
-                            <img src="./assets/images/twibbon/271694035_5084774744888923_3765258600590054399_n.webp.jpg" class="card-img-top" alt="CYq2ZPdPLtT">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYq1UPYpWNz/" target="_blank">
-                            <img src="./assets/images/twibbon/271806642_1154227488443199_4529404457137158743_n.webp.jpg" class="card-img-top" alt="CYq1UPYpWNz">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYqydO8JEwp/" target="_blank">
-                            <img src="./assets/images/twibbon/271681549_732930711003654_2134669685956464563_n.webp.jpg" class="card-img-top" alt="CYqydO8JEwp">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYqxguzBp9i/" target="_blank">
-                            <img src="./assets/images/twibbon/271845480_333260412004644_2508373413619589374_n.jpg" class="card-img-top" alt="CYqxguzBp9i">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYqxMUwlz2d/" target="_blank">
-                            <img src="./assets/images/twibbon/271762920_1704422666430084_3217856013084431199_n.jpg" class="card-img-top" alt="CYqxMUwlz2d">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYqvs8AlEyH/" target="_blank">
-                            <img src="./assets/images/twibbon/271907117_1507335962975906_4544586086404320777_n.webp.jpg" class="card-img-top" alt="CYqvs8AlEyH">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYqvfCnP5rw/" target="_blank">
-                            <img src="./assets/images/twibbon/271704514_249077514036554_778339559656302414_n.webp.jpg" class="card-img-top" alt="CYqvfCnP5rw">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card card-block">
-                        <a href="//www.instagram.com/p/CYqt_5avZpE/" target="_blank">
-                            <img src="./assets/images/twibbon/271846668_620070435914130_341828203705915433_n.jpg" class="card-img-top" alt="CYqt_5avZpE">
-                        </a>
-                    </div>
-                </div>
+            <?php endfor; ?>
             </div>
         </main>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-5">
