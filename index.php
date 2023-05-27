@@ -39,6 +39,15 @@
                                 <canvas id="imageCanvas" class="image-canvas"></canvas>
                                 <div class="profile-pic-wrap">
                                     <div id="demo-basic"></div>
+                                    <div class="row text-center d-none" id="rotate-image">
+                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradio" id="rotate-left" data-deg="-90" autocomplete="off">
+                                        <label class="btn btn-outline-primary btn-sm" for="rotate-left"><i class="bi bi-arrow-counterclockwise"></i> Kiri</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="rotate-right" data-deg="90" autocomplete="off">
+                                        <label class="btn btn-outline-primary btn-sm" for="rotate-right"><i class="bi bi-arrow-clockwise"></i> Kanan</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <hr class="dropdown-divider">
                                 <div class="card-body text-center">
