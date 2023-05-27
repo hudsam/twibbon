@@ -62,17 +62,17 @@
                                 <div class="card-header"><em>Caption</em></div>
                                 <div class="card-body">
                                     <small class="text-primary fw-bold"><i class="bi bi-info-circle-fill"></i> Tekan tepat pada <em>caption</em> untuk menyalinnya.</small>
-                                    <textarea id="caption" class="form-control mt-3" rows="17" style="resize: none;" readonly>🩸✨ SIAP AMBIL PERAN PRDD 2023 ✨🩸
+                                    <textarea id="caption" class="form-control mt-3" rows="17" style="resize: none;" readonly>🩸✨ SIAP AMBIL PERAN BERSAMA PDDI KOTA MALANG ✨🩸
 
-Halo Kawan Donor! {nama kecemu} Sudah Mendaftar Program Pelatihan Relawan Donor Darah 2023 PDDI Kota Malang.
+Aloha Relawan! {nama kecemu} sudah berencana untuk menjadi bagian dari program pelatihan relawan donor darah 2023 yang diselenggarakan oleh PDDI Kota Malang ( @pddi.malang - @1000donordarahmilenial ) 🔥.
 
-" Generasi Muda sebagai Garda Terdepan Penggerak Donor Darah "
-Yuk Ikut dan Jadilah Penggerak Donor Darah Kota Malang
+" Generasi Muda sebagai Garda Terdepan Penggerak Donor Darah ". Yuk ikut dan jadilah penggerak donor darah Kota Malang!
 
-Pendaftaran : 23 Mei - 4 Juni 2023
-Melalui Link : www.pddimalang/program-rdd
+📝 Pendaftaran : 23 Mei - 4 Juni 2023
+🌐 Melalui tautan : www.pddimalang/program-rdd
 
-Kami Tunggu yaaaaa🤗
+Kamu kapan nih? {mention 3 teman kecemu}
+Kami Tunggu ya 🙌
 
 #PelatihanRelawanDonorDarah2023 #RelawanDonorDarah #PDDIKotaMalang</textarea>
                                 </div>
