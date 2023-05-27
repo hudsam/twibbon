@@ -79,6 +79,7 @@ $(document).ready(function() {
             loadingImage.onloadstart = function(event) {
                 $(".cr-viewport").append('<div class="loader"></div>');
             };
+            $('div#rotate-image').removeClass('d-none');
         });
     }
 
@@ -103,7 +104,8 @@ $(document).ready(function() {
         boundary: {
             width: Math.min(300, window.innerWidth - 50),
             height: Math.min(300, window.innerWidth - 50)
-        }
+        },
+        enableOrientation: true,
     });
 
     $(".basic-result").on("click", function(e) {
@@ -140,4 +142,13 @@ $(document).ready(function() {
             html: '<em>Caption</em> telah disalin.',
         });
     });
+
+    $("#rotate-left").click(function() {
+        basic.croppie('rotate', parseInt($(this).data('deg')));
+    });
+
+    $("#rotate-right").click(function() {
+        basic.croppie('rotate', parseInt($(this).data('deg')));
+    });
+
 });
