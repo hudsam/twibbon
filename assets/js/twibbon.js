@@ -159,6 +159,9 @@ $(document).ready(function() {
                     title: 'Ubah Status Akun',
                     text: 'Ganti yang awalnya privat menjadi publik ya. Karena ini akan membantu Panitia reviu data pendaftar.',
                     icon: 'warning',
+                    confirmButtonText: 'Buka akun <i class="bi bi-instagram"></i> Instagram',
+                }).then(function() {
+                    window.open('https://www.instagram.com', '_blank');
                 });
             }
         });
