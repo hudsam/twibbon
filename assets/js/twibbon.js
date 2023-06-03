@@ -123,9 +123,6 @@ $(document).ready(function() {
     $("#caption").on("click", function() {
         let copytext = $(".form-control");
 
-        copytext.select();
-        document.execCommand("copy");
-
         const Toast = Swal.mixin({
             toast: true,
             position: 'top-end',
@@ -137,9 +134,33 @@ $(document).ready(function() {
                 toast.addEventListener('mouseleave', Swal.resumeTimer)
             }
         });
-        Toast.fire({
-            icon: 'success',
-            html: '<em>Caption</em> telah disalin.',
+
+        Swal.fire({
+            title: 'Status Akun Instagram',
+            text: 'Apakah sudah berstatus publik?',
+
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: 'Sudah dong! <i class="bi bi-emoji-smile-fill"></i>',
+            denyButtonText: `Belum nih... <i class="bi bi-emoji-frown-fill"></i>`,
+        }).then((result) =>
+        {
+            if (result.isConfirmed)
+            {
+                copytext.select();
+                document.execCommand("copy");
+                Toast.fire({
+                    icon: 'success',
+                    html: '<em>Caption</em> telah disalin.',
+                });
+            } else if (result.isDenied)
+            {
+                Swal.fire({
+                    title: 'Ubah Status Akun',
+                    text: 'Ganti yang awalnya privat menjadi publik ya. Karena ini akan membantu Panitia reviu data pendaftar.',
+                    icon: 'warning',
+                });
+            }
         });
     });
 
