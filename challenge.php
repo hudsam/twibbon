@@ -74,7 +74,7 @@
 
 {mention 3 teman kecemu}, @pddi.malang, @1000donordarahmilenial, dan @pddimalangmerch
 
-#HariDonorDarahSedia #WorldBloodDonorDay #RelawanDonorDarah #PDDIKotaMalang</textarea>
+#HariDonorDarahSedunia #WorldBloodDonorDay #RelawanDonorDarah #PDDIKotaMalang</textarea>
                                 </div>
                             </div>
                         </div>
